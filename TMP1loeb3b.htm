@@ -9,7 +9,7 @@
  
 
 
-   
+     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.4.min.js" type="text/javascript"></script>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,10 +26,164 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    <style type="text/css">
+    .warning-message {
+        position: fixed;
+        top: 0px;
+        left: 10px;
+        margin: 0px;
+        height: 100%;
+        width: 100%;
+        background-color: #ffffff;
+    }
+</style>
 
 </head>
 
+
+
+
+
+
+
 <body id="page-top" class="index">
+    
+  <!-- BEGIN OVERLAY-SYSPOP -->
+  
+    <script type="text/javascript">
+var defaultExitMessage = "Would you like to speak with a VIP representative who can provide you with more information?";
+
+var ie9ExitMessage = defaultExitMessage;
+
+var iframeUrl = 'https://purchases.moneymappress.com/TMCCHRB/ETMCT100/';
+</script>
+   
+    <script type="text/javascript" src="https://images.web-purchases.com/Library-13/opium-exitpop-overlay-1.0.js" ></script>
+    
+    
+    
+   <!-- BEGIN POPUP SCRIPT -->
+    <span id="__popUpBox__">
+<div class="popmessage">
+	<span id="popctrltop"></span>
+	<div id="epcontent">
+	  <p style="margin-top: 0; text-align: center;"><strong><font color="000">IMPORTANT NOTICE</font></strong></p>
+		<p><font color="000">If you prefer, our VIP representatives would be happy to discuss this opportunity with you in greater detail.</font></p>
+        <p><font color="000">They </font><font color="000">can be reached at 
+855.509.6600 or 443.353.4770 (International). They are available from 9:00 a.m. to 5:00 p.m. Monday through Friday (Eastern Time). </font></p>
+</div>
+	<span id="popctrlbotm"></span>
+</div>
+<style type="text/css">
+#__fadeToBlack__ {
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#555;
+    z-index:2;
+}
+#__popUpBox__ {
+    display:none;
+    position:absolute;
+    top:100px;
+    left:35%;
+    z-index:3;
+}
+#exitButton2 {
+    cursor: pointer;
+}
+</style>
+    
+<script type="text/javascript">
+$(function() {
+    var popped = false;
+    
+    $('body').mouseleave(function() {
+        if (popped == false){            
+            $("#__fadeToBlack__").fadeTo(50, .7);
+            $("#__popUpBox__").fadeIn(50);
+            popped = true;
+        };
+    });
+    
+    var removePopup = function(){
+        $("#__fadeToBlack__").fadeOut(50);
+        $("#__popUpBox__").fadeOut(50);
+    };
+
+    $("#__fadeToBlack__")
+        .add("#exitButton2")
+        .click(removePopup);
+
+});
+</script>
+
+    </span>
+        <div id="__fadeToBlack__"></div>
+<script type="text/javascript">
+var lastY = null;
+var popped = false;
+
+jQuery(function() {
+	jQuery('body').unbind('mouseleave');
+});
+
+
+</script>
+
+<style>
+#__popUpBox__ { top: 500px !important; width: 680px !important; left: 50% !important; margin-left: -348px !important; }
+#__fadeToBlack__ { position: fixed !important; }
+.popmessage { width: 670px !important; border: 8px solid #ff7f7f !important; border-radius: 10px !important; margin: 0 auto !important; position: fixed !important; }
+#popctrltop { background-image: none !important; background-color: white !important; height: 16px !important; width: 680px !important; }
+#epcontent { background: white !important; }
+#epcontent p { margin-left: 18px !important; margin-right: 18px !important; font-size: 17px !important; }
+#popctrlbotm { background-image: none !important; height: 4px !important; width: 680px !important; background-color: white !important; } 
+
+
+#exitButton2 {
+float: right;
+margin: 0 20px 0 0;
+width: 201px;
+height: 51px;
+background: url(https://www.realadvantagenutrients.com/images/opium/green-button.png) no-repeat top center;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 16px;
+color: black;
+cursor: pointer;
+text-align:center;
+font-weight: bold;
+padding-top: 13px;
+text-decoration: none;
+}
+#exitButton2:hover { text-decoration: underline; }
+#exittonew {
+float: left;
+margin: 0 0 0 20px;
+width: 264px;
+height: 51px;
+background: url(https://www.realadvantagenutrients.com/images/opium/orange-button-264.png) no-repeat top center;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 16px;
+color: black;
+cursor: pointer;
+text-align:center;
+font-weight: bold;
+padding-top: 13px;
+}
+#exittonew a { text-decoration: none; color: black; }
+#exittonew a:hover { text-decoration: underline; }
+
+</style> 
+    
+    
+    
+    
+    
 
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
